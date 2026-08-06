@@ -1,0 +1,142 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* bhs_hr_personal_information
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-05 09:59+0000\n"
+"PO-Revision-Date: 2026-06-05 09:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__birthday
+msgid "Birthday"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__identification_id
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__identification_id
+msgid "Citizen ID Number"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.bhs_res_users_view_form_profile_private_information_inherit
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.view_employee_form_inherit_new
+msgid "City"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.bhs_res_users_view_form_profile_private_information_inherit
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.view_employee_form_inherit_new
+msgid "Country"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model,name:bhs_hr_personal_information.model_hr_employee
+msgid "Employee"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__id
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__id
+msgid "ID"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__cccd_issue_date
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__cccd_issue_date
+msgid "Issue Date"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__cccd_issue_place
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__cccd_issue_place
+msgid "Place of Issue"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__private_permanent_country_id
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__private_permanent_country_id
+msgid "Private Country"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.bhs_res_users_view_form_profile_private_information_inherit
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.view_employee_form_inherit_new
+msgid "Private Permanent Address"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__private_permanent_city
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__private_permanent_city
+msgid "Private Permanent City"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__private_permanent_state_id
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__private_permanent_state_id
+msgid "Private Permanent State"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__private_permanent_street
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__private_permanent_street
+msgid "Private Permanent Street"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__private_permanent_street2
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__private_permanent_street2
+msgid "Private Permanent Street2"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.bhs_res_users_view_form_profile_private_information_inherit
+msgid "Private information"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__ssnid
+msgid "SSN No"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model.fields,help:bhs_hr_personal_information.field_res_users__ssnid
+msgid "Social Security Number"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.bhs_res_users_view_form_profile_private_information_inherit
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.view_employee_form_inherit_new
+msgid "State"
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.bhs_res_users_view_form_profile_private_information_inherit
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.view_employee_form_inherit_new
+msgid "Street 2..."
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.bhs_res_users_view_form_profile_private_information_inherit
+#: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.view_employee_form_inherit_new
+msgid "Street..."
+msgstr ""
+
+#. module: bhs_hr_personal_information
+#: model:ir.model,name:bhs_hr_personal_information.model_res_users
+msgid "User"
+msgstr ""
