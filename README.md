@@ -50,7 +50,7 @@
 
 #### Key Features:
 
-🌟 <code>Extended Personal Details</code>: Expands the Private Permanent Address fields and Private Information section in My Profile with key fields such as Birthday, Citizen ID Number, Issue Date, Place of Issue. Employees can directly view and update their own personal details.
+🌟 <code>Extended Personal Details</code>: Expands the Private Information section in My Profile with key fields such as Birthday, Citizen ID Number, Issue Date, Place of Issue. Employees can directly view and update their own personal details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,7 +73,7 @@ This module centralizes employee personal information management and enables emp
 
 #### Featured Highlight:
 
-🌟 <code>Simple Setup</code>: After installing module, extends employee profiles with additional personal information fields, including permanent address and identification details. Employees can securely view and update their information through the My Profile portal.
+🌟 <code>Simple Setup</code>: After installing module, extends employee profiles with additional personal information fields, including identification details. Employees can securely view and update their information through the My Profile portal.
 
 
 <!-- LICENSE -->

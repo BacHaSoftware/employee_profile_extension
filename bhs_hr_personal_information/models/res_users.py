@@ -1,51 +1,25 @@
-from odoo import models, api, fields
-import logging
-import time
+from odoo import fields, models
 
-_logger = logging.getLogger(__name__)
+from odoo.addons.hr.models.res_users import related_employee_field
 
 
 class BHSResUsers(models.Model):
     _inherit = 'res.users'
 
-    birthday = fields.Date(related='employee_id.birthday', readonly=False, related_sudo=False)
-    ssnid = fields.Char(related='employee_id.ssnid', readonly=False, related_sudo=False)
-    identification_id = fields.Char(related='employee_id.identification_id', readonly=False, related_sudo=False)
-    private_permanent_street = fields.Char(related='employee_id.private_permanent_street', readonly=False, related_sudo=False)
-    private_permanent_street2 = fields.Char(related='employee_id.private_permanent_street2', readonly=False, related_sudo=False)
-    private_permanent_city = fields.Char(related='employee_id.private_permanent_city', readonly=False, related_sudo=False)
+    # Simulated related fields "employee_id.<name>" (core hr): the current user reads and writes his own employee
+    # (user_writeable), other users go through the normal access rights. birthday is a core field since Odoo 20.
+    identification_id = fields.Char(
+        **related_employee_field('identification_id', string="Citizen ID Number"), user_writeable=True)
+    private_permanent_street = fields.Char(**related_employee_field('private_permanent_street'), user_writeable=True)
+    private_permanent_street2 = fields.Char(**related_employee_field('private_permanent_street2'), user_writeable=True)
+    private_permanent_city = fields.Char(**related_employee_field('private_permanent_city'), user_writeable=True)
     private_permanent_state_id = fields.Many2one(
-        related='employee_id.private_permanent_state_id', readonly=False, related_sudo=False)
-    private_permanent_country_id = fields.Many2one(related='employee_id.private_permanent_country_id', readonly=False, related_sudo=False)
-    cccd_issue_date = fields.Date(related='employee_id.cccd_issue_date', readonly=False, related_sudo=False)
-    cccd_issue_place = fields.Char(related='employee_id.cccd_issue_place', readonly=False, related_sudo=False)
-
-    @property
-    def SELF_READABLE_FIELDS(self):
-        return super().SELF_READABLE_FIELDS + [
-            'birthday',
-            'ssnid',
-            'identification_id',
-            'private_permanent_street',
-            'private_permanent_street2',
-            'private_permanent_city',
-            'private_permanent_state_id',
-            'private_permanent_country_id',
-            'cccd_issue_date',
-            'cccd_issue_place',
-        ]
-
-    @property
-    def SELF_WRITEABLE_FIELDS(self):
-        return super().SELF_WRITEABLE_FIELDS + [
-            'birthday',
-            'ssnid',
-            'identification_id',
-            'private_permanent_street',
-            'private_permanent_street2',
-            'private_permanent_city',
-            'private_permanent_state_id',
-            'private_permanent_country_id',
-            'cccd_issue_date',
-            'cccd_issue_place',
-        ]
+        'res.country.state',
+        domain="[('country_id', '=?', private_permanent_country_id)]",
+        **related_employee_field('private_permanent_state_id'),
+        user_writeable=True,
+    )
+    private_permanent_country_id = fields.Many2one(
+        'res.country', **related_employee_field('private_permanent_country_id'), user_writeable=True)
+    cccd_issue_date = fields.Date(**related_employee_field('cccd_issue_date'), user_writeable=True)
+    cccd_issue_place = fields.Char(**related_employee_field('cccd_issue_place'), user_writeable=True)

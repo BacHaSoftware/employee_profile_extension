@@ -25,7 +25,7 @@
                            class="o_address_state"
                            placeholder="State"
                            options="{'no_open': True, 'no_create': True}"
-                           context="{'default_country_id': private_country_id}" invisible="1"/>
+                           context="{'default_country_id': private_permanent_country_id}" invisible="1"/>
 
                     <field name="private_permanent_country_id"
                            placeholder="Country"

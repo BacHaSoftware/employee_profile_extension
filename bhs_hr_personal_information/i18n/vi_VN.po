@@ -22,6 +22,7 @@ msgstr "Ngày sinh"
 
 #. module: bhs_hr_personal_information
 #: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__identification_id
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_version__identification_id
 #: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__identification_id
 msgid "Citizen ID Number"
 msgstr "Số CCCD"
@@ -62,16 +63,16 @@ msgid "Issue Date"
 msgstr "Ngày cấp"
 
 #. module: bhs_hr_personal_information
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__private_permanent_country_id
+#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__private_permanent_country_id
+msgid "Permanent Country"
+msgstr "Quốc gia thường trú"
+
+#. module: bhs_hr_personal_information
 #: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__cccd_issue_place
 #: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__cccd_issue_place
 msgid "Place of Issue"
 msgstr "Nơi cấp"
-
-#. module: bhs_hr_personal_information
-#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_hr_employee__private_permanent_country_id
-#: model:ir.model.fields,field_description:bhs_hr_personal_information.field_res_users__private_permanent_country_id
-msgid "Private Country"
-msgstr "Quốc gia riêng"
 
 #. module: bhs_hr_personal_information
 #: model_terms:ir.ui.view,arch_db:bhs_hr_personal_information.bhs_res_users_view_form_profile_private_information_inherit
