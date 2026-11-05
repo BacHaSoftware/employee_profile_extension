@@ -90,7 +90,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 Need assistance with setup or have any concerns? Contact Bac Ha Software directly for prompt and dedicated support:
 <div align="left">
   <a href="https://github.com/BacHaSoftware">
-    <img src="/bhs_hr_personal_information/static/description/imgs/logo.png" alt="Logo" height="80">
+    <img src="/bhs_hr_personal_information/static/description/imgs/logo-bhsoft.png" alt="Logo" height="80">
   </a>
 </div>
 
