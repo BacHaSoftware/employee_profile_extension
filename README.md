@@ -4,8 +4,8 @@
 <!-- PROJECT DETAILS -->
 <br />
 <div align="center">
-  <a href="https://github.com/BacHaSoftware/hr_skill_elearning">
-    <img src="/bhs_hr_skill_elearning/static/description/icon.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/BacHaSoftware/bhs_hr_personal_information">
+    <img src="/bhs_hr_personal_information/static/description/icon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Employee Profile Extension</h3>
